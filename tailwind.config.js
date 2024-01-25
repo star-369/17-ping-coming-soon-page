@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         libre: "var(--libre)",
       },
+      boxShadow: {
+        "css-1": "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
+      },
     },
   },
   plugins: [],

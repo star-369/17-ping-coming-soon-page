@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-import Ping from "./assets/images/logo.svg";
-import Illustration from "./assets/images/illustration-dashboard.png";
+import Ping from "./assets/logo.svg";
+import Illustration from "./assets/illustration-dashboard.png";
 
 type Input = {
   email: string;
@@ -30,11 +30,11 @@ function App() {
         >
           <div className=" md:flex-[2] mb-4">
             <input
-              className={`placeholder:text-black 
+              className={`placeholder:text-gray 
               placeholder:text-sm placeholder:absolute placeholder:top-[50%] placeholder:translate-y-[-60%] placeholder:left-10 placeholder:tracking-wide outline-none w-full px-4 py-2 rounded-full border-[1px] ${
                 errors.email ? "border-light-red" : "border-pale-blue"
               }`}
-              placeholder="example@gmail.com"
+              placeholder="your email address..."
               {...register("email", {
                 required: "Email is required",
                 pattern: {
@@ -51,7 +51,7 @@ function App() {
           </div>
           <button
             type="submit"
-            className="w-full py-2 text-white rounded-full bg-blue hover:bg-pale-blue hover:text-white md:flex-[1] font-semibold"
+            className="shadow-css-1 w-full py-2 text-white rounded-full bg-blue hover:bg-pale-blue hover:text-white md:flex-[1] font-semibold"
           >
             Notify Me
           </button>
